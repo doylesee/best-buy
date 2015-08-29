@@ -53,8 +53,12 @@ $(document).ready(function(){
 		});
 	});
 	
+	// Rounded corners for IE8
+	$('.round-button.js').corner();
+	
 	// Toggle show/hide More Details container
 	$('.main-features__more-details.js a').click(function() {
+		$(this).toggleClass('open');
 		$('#more-details-js').slideToggle('slow');
 	});
 	
