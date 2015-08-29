@@ -152,11 +152,13 @@ a.main-features__details-cart {
 .main-features__more-details {
   text-align: center; }
   .main-features__more-details a {
-    background: url("../img/main-features__more-details-bg.gif") no-repeat center bottom;
+    background: url("../img/main-features__more-details-bg.gif") no-repeat 0 bottom;
     display: block;
     margin: 0 auto;
     padding: 0 0 62px 0;
     width: 104px; }
+  .main-features__more-details a.open {
+    background-position: -104px bottom; }
 
 /* More Details container */
 .more-details {
@@ -402,8 +404,7 @@ a.reviews__overall-score-button:hover {
     line-height: 46px; }
 
   a.detailed-specs__details-button {
-    background-position: 167px center;
-    font-size: 18px; }
+    background-position: 167px center; }
 
   #detailed-specs__details-item-js,
   #detailed-specs__image-js {
