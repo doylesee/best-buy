@@ -26,7 +26,7 @@ body {
   border-radius: 4px;
   color: #fff;
   display: block;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 60px;
   max-width: 207px;
   padding: 0 27px 0 18px;
@@ -34,7 +34,7 @@ body {
 
 /* Main Features section */
 .main-features {
-  margin: 100px 0 28px 0; }
+  margin: 100px 0 0 0; }
 
 .main-features__image {
   text-align: center; }
@@ -197,7 +197,7 @@ a.top-features__videos-item.even {
 
 .top-features__details {
   background: #fff;
-  margin: 138px 0 0 0;
+  margin: 0;
   padding: 53px 46px 77px 46px; }
 
 .top-features__details-item h3 {
@@ -212,9 +212,9 @@ a.top-features__videos-item.even {
 
 /* Detailed Specs section */
 .detailed-specs {
-  margin: -127px 0 1px 0;
   overflow: hidden;
   position: relative;
+  top: -127px;
   z-index: 1; }
 
 .detailed-specs__heading-image img {
@@ -256,7 +256,7 @@ a.top-features__videos-item.even {
   margin: 0 0 40px 0; }
 
 a.detailed-specs__details-button {
-  background: url("../img/detailed-specs__details-button-bg.png") no-repeat 187px center #ffd200; }
+  background: url("../img/detailed-specs__details-button-bg.png") no-repeat 167px center #ffd200; }
 
 a.detailed-specs__details-button:hover {
   color: #fff; }
@@ -268,7 +268,9 @@ a.detailed-specs__details-button:hover {
 
 /* Read Reviews section */
 .reviews {
-  margin: 0 0 150px 0; }
+  margin: 0 0 150px 0;
+  position: relative;
+  top: -127px; }
 
 .reviews__heading h2 {
   background: #6fce3c;
@@ -376,6 +378,15 @@ a.reviews__overall-score-button:hover {
 .reviews__list-item-scoring--5 {
   background-position: 0 -20px; }
 
+@media only screen and (min-width: 480px) {
+  /* 480 Detailed Specs section */
+  .detailed-specs {
+    top: -180px;
+    width: 100%; }
+
+  /* 480 Reviews Specs section */
+  .reviews {
+    top: -180px; } }
 @media only screen and (min-width: 768px) {
   .section-button, a.detailed-specs__details-button, a.reviews__overall-score-button {
     font-size: 18px; }
@@ -395,16 +406,12 @@ a.reviews__overall-score-button:hover {
   .top-features__details-wrapper {
     padding-left: 0; }
 
-  /* 768 Detailed Specs section */
-  .detailed-specs {
-    margin: -180px 0 1px 0; }
+  .top-features__details {
+    margin: 138px 0 0 0; }
 
   .detailed-specs__heading h2 {
     font-size: 42px;
     line-height: 46px; }
-
-  a.detailed-specs__details-button {
-    background-position: 167px center; }
 
   #detailed-specs__details-item-js,
   #detailed-specs__image-js {
