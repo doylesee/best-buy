@@ -1,0 +1,1 @@
+Sample website for a mobile phone model. I used the following technologies: HTML, SASS as my CSS preprocessor, Zurb Foundation for the responsive feature, a little bit of JavaScript/jQuery. Code also supports IE8 and above, and all major browsers like Firefox, Chrome and Safari.
